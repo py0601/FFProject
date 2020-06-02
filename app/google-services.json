@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "962000264809",
+    "firebase_url": "https://ffproject-fa67c.firebaseio.com",
+    "project_id": "ffproject-fa67c",
+    "storage_bucket": "ffproject-fa67c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962000264809:android:a18c36a98bbd75d92e0cf8",
+        "android_client_info": {
+          "package_name": "com.androidapp.ffproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962000264809-8u0fbh28hvht1fh1q11bir63c1rl005l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbWZTTl0DHh5oqW6x-qBAmrY14_1j3HhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962000264809-8u0fbh28hvht1fh1q11bir63c1rl005l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
