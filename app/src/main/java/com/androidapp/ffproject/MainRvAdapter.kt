@@ -9,11 +9,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import org.w3c.dom.Text
 
-class MainRvAdapter(val context: Context, val foodList : ArrayList<Food>) : RecyclerView.Adapter<MainRvAdapter.Holder>() {
+class MainRvAdapter(val context: Context, val foodList : ArrayList<Food>, val itemClick : (Food) -> Unit) : RecyclerView.Adapter<MainRvAdapter.Holder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(context).inflate(R.layout.main_rv_item, parent, false)
-        return Holder(view)
+        return Holder(view, itemClick)
     }
 
     override fun getItemCount(): Int {
@@ -24,7 +24,7 @@ class MainRvAdapter(val context: Context, val foodList : ArrayList<Food>) : Recy
         holder?.bind(foodList[position], context)
     }
 
-    inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class Holder(itemView: View, itemClick: (Food) -> Unit) : RecyclerView.ViewHolder(itemView) {
         val foodPhoto = itemView.findViewById<ImageView>(R.id.FoodPhotoImg)
         val foodName = itemView.findViewById<TextView>(R.id.FoodNameTxt)
         val foodAdderss = itemView.findViewById<TextView>(R.id.FoodAddressTxt)
@@ -40,6 +40,8 @@ class MainRvAdapter(val context: Context, val foodList : ArrayList<Food>) : Recy
             foodName?.text = food.FoodName
             foodAdderss?.text = food.FoodAddress
             foodPhone?.text = food.FoodPhone
+
+            itemView.setOnClickListener{ itemClick(food)}
         }
     }
 }

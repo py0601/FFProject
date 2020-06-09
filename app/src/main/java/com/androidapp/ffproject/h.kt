@@ -1,7 +1,9 @@
 package com.androidapp.ffproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_h.*
@@ -19,7 +21,11 @@ class h : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_h)
 
-        val mAdapter = MainRvAdapter(this, foodList)
+        /*리스트 클릭 이벤트*/
+        val mAdapter = MainRvAdapter(this, foodList) {
+            val intent = Intent(this, ch::class.java)
+            startActivity(intent)
+        }
         mRecyclerView.adapter = mAdapter
 
         val lm = LinearLayoutManager(this)
