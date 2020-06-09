@@ -19,39 +19,49 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btn2"
+            android:id="@+id/btnhodu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="호두과자" />
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/btnsunde"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="병천순대" />
 
         <Button
-            android:id="@+id/btn3"
+            android:id="@+id/btnN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <Button
-            android:id="@+id/btn4"
+            android:id="@+id/btnN2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <Button
-            android:id="@+id/btn5"
+            android:id="@+id/btnN3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <Button
-            android:id="@+id/btn6"
+            android:id="@+id/btnN4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="-" />
     </LinearLayout>
+
+    <Button
+    android:id="@+id/Addbtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="142dp"
+    android:layout_marginEnd="46dp"
+    android:text="추가"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,31 +19,31 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btn1"
+            android:id="@+id/Chbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="천안시" />
 
         <Button
-            android:id="@+id/btn2"
+            android:id="@+id/Asanbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="아산시" />
 
         <Button
-            android:id="@+id/btn3"
+            android:id="@+id/Dbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="대전" />
 
         <Button
-            android:id="@+id/btn4"
+            android:id="@+id/Gbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="공주시" />
 
         <Button
-            android:id="@+id/btn5"
+            android:id="@+id/Seosanbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="서산시" />

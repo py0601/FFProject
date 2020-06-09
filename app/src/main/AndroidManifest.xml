@@ -11,15 +11,14 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".h"
-            android:label="@string/h_name"></activity>
+            android:label="@string/h_name" />
         <activity
             android:name=".ch"
-            android:label="@string/ch_name"/>
+            android:label="@string/ch_name" />
         <activity
             android:name=".Chungcheongnam_do_Acti"
-            android:label="@string/ccn_name"/>
-        <activity
-            android:name=".MainActivity">
+            android:label="@string/ccn_name" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

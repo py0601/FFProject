@@ -3,7 +3,7 @@ package com.androidapp.ffproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_ch.*
 
 class ch : AppCompatActivity() {
 
@@ -11,10 +11,12 @@ class ch : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ch)
 
-        btn2.setOnClickListener {
+        btnhodu.setOnClickListener {
             val intent = Intent(this, h::class.java)
             startActivity(intent)
         }
+
+
 
     }
 }

@@ -3,7 +3,7 @@ package com.androidapp.ffproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_chungcheongnam_do_.*
 
 class Chungcheongnam_do_Acti : AppCompatActivity() {
 
@@ -11,7 +11,7 @@ class Chungcheongnam_do_Acti : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chungcheongnam_do_)
 
-        btn1.setOnClickListener {
+        Chbtn.setOnClickListener {
             val intent = Intent(this, ch::class.java)
             startActivity(intent)
         }
