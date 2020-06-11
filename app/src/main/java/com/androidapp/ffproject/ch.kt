@@ -17,7 +17,7 @@ class ch : AppCompatActivity() {
         }
 
         Addbtn.setOnClickListener {
-            val intent = Intent(this, Add::class.java)
+            val intent = Intent(this, AddMain::class.java)
             startActivity(intent)
         }
 
