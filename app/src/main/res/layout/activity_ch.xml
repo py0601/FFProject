@@ -7,14 +7,13 @@
     tools:context=".ch">
 
     <LinearLayout
-        android:layout_width="326dp"
-        android:layout_height="292dp"
+        android:layout_width="364dp"
+        android:layout_height="388dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="148dp"
         android:layout_marginEnd="1dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -53,15 +52,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="-" />
+
+        <Button
+            android:id="@+id/btnN5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btnN6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
     </LinearLayout>
 
     <Button
-    android:id="@+id/Addbtn"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="142dp"
-    android:layout_marginEnd="46dp"
-    android:text="추가"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="20dp"
+        android:text="추가"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

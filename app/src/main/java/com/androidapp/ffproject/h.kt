@@ -22,15 +22,13 @@ class h : AppCompatActivity() {
         setContentView(R.layout.activity_h)
 
         /*리스트 클릭 이벤트*/
-        val mAdapter = MainRvAdapter(this, foodList) {
-            val intent = Intent(this, ch::class.java)
-            startActivity(intent)
-        }
+        val mAdapter = MainRvAdapter(this, foodList) {}
         mRecyclerView.adapter = mAdapter
 
         val lm = LinearLayoutManager(this)
         mRecyclerView.layoutManager = lm
         mRecyclerView.setHasFixedSize(true)
+
 
     }
 }

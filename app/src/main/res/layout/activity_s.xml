@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".h">
+    tools:context=".s">
 
     <TextView
         android:id="@+id/txt2"
         android:layout_width="382dp"
-        android:layout_height="185dp"
+        android:layout_height="197dp"
         android:layout_marginTop="8dp"
-        android:text="설명 : (유래) 호두과자는 1934년 조귀금(충남 천안, 1987년 사망)씨가 처음 만들었다. 호두 모양을 본뜬 과자로, 견과류인 호두와 팥 앙금이 들어있다. (개설) 천안시를 대표하는 명물 과자로서 광덕면에서 생산되는 호두와 팥소, 밀가루를 주원료로 호두 모양으로 구워서 만든다. 1933년에 조귀금(趙貴金)의 학화 호두과자 제과점(鶴華胡桃菓子製菓店)에서 처음 만들기 시작하였다. 호두에는 오메가 3 지방산이 풍부하고 단백질과 비타민 B1, 비타민 B2 등 우리 몸에 좋은 영양 성분이 풍부하다고 알려져 있다. (연원 및 변천) 천안의 호두과자는 천안시 대흥동의 원조 학화(鶴華) 호도과자로부터 시발되었다. 1970년대 중반 이후 천안역 주변 상가를 중심으로 유사 제과점이 여러 곳 등장하면서 원조 학화 호도과자의 독점 체제가 경쟁 체제로 변환되었다."
+        android:text="(개설) 병천 순대는 충청남도 천안시 병천면의 오일장(五日場)인 병천장에서 팔던 장터 음식이다. 일반 순대와 달리 소나 돼지 내장에 채소와 선지를 넣어 맛이 담백해 전국적으로 유명해 졌다. (연원 및 변천) ‘병천(竝川)’은 우리말로 ‘아우내’라 한다. 아우내 장터는 천안 삼거리로 향하는 길목에 있어서 길손들의 발길이 끊이지 않던 곳이었다. 아우내 장터에는 순대 국밥집이 즐비하게 있었는데, 순대 국밥만큼 장꾼들의 허기진 배를 채울 수 있는 값싸고 맛 좋은 음식이 없었기 때문이다. 1960년대에 천안시 병천면에 돼지고기를 취급하는 햄 공장이 생긴 후에 아우내 장터에 순대가 본격적으로 보급되었다. 병천면 주민들은 햄을 만들고 남은 돼지 내장에 각종 채소와 선지를 넣어서 먹음직스럽게 순대를 만들기 시작했다. 그 이후 병천 순대는 병천장에서 맛볼 수 있는 특별한 음식으로 자리 잡았다."
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.551"
@@ -20,22 +20,24 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mRecyclerView"
-        android:layout_width="391dp"
-        android:layout_height="281dp"
+        android:layout_width="394dp"
+        android:layout_height="244dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt2" />
+        app:layout_constraintTop_toBottomOf="@+id/txt2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="199dp"
         android:layout_height="171dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/hodu"
+        android:src="@drawable/sunde"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="192dp"
-        android:text="이름 : 호두과자"
+        android:text="이름 : 병천순대"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 

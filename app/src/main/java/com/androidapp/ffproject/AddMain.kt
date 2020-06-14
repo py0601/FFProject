@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_add.*
-import kotlinx.android.synthetic.main.activity_add.rl_todo_list
 import kotlinx.android.synthetic.main.dialog_add_todo.view.*
 import java.util.*
 import kotlin.collections.ArrayList

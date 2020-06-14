@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import org.w3c.dom.Text
 
-class MainRvAdapter(val context: Context, val foodList : ArrayList<Food>, val itemClick : (Food) -> Unit) : RecyclerView.Adapter<MainRvAdapter.Holder>() {
+class MainRvAdapter(val context: Context, val foodList: ArrayList<Food>, val itemClick: (Food) -> Unit) : RecyclerView.Adapter<MainRvAdapter.Holder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(context).inflate(R.layout.main_rv_item, parent, false)
