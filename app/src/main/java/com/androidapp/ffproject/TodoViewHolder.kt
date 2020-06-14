@@ -6,7 +6,7 @@ import kotlinx.android.synthetic.main.item_todo.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-class TodoViewHolder(view: View): RecyclerView.ViewHolder(view) {
+class TodoViewHolder(view: View, listener: TodoListAdapter.OnTodoItemClickListener?): RecyclerView.ViewHolder(view) {
     val title = view.tv_todo_title
     val descripton = view.tv_todo_description
     val createdDate = view.tv_todo_created_date
@@ -20,6 +20,17 @@ class TodoViewHolder(view: View): RecyclerView.ViewHolder(view) {
     fun Long.toDateString(format: String): String {
         val simpleDateFormat = SimpleDateFormat(format)
         return simpleDateFormat.format((Date(this)))
+    }
+
+    init {
+        view.setOnClickListener {
+            listener?.onTodoItemClick(adapterPosition)
+        }
+
+        view.setOnLongClickListener {
+            listener?.onTodoItemLongClick(adapterPosition)
+            return@setOnLongClickListener true
+        }
     }
 
 }
